@@ -1,0 +1,14 @@
+<script type="text/javascript" src="/js/handlebars-1.0.rc.1.js"></script>
+<script type="text/javascript" src="/js/feedback.js"></script>
+
+<script id="entry-template" type="text/x-handlebars-template">
+  <form action="/feedback" method="post">
+    <input type="hidden" name="window_location_href" value="{{window_location_href}}">
+    <input type="hidden" name="document_location" value="{{document_location}}"/>
+    <textarea name="comment">
+    </textarea>
+    <input type="submit" value="Send Feedback" />
+  </form>
+</script>
+
+<div id="feedback-dialog"></div>
