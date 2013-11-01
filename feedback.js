@@ -15,10 +15,29 @@ $(function() {
                 document_location: $(this)[0].el.outerText
             }));
 
+            var formView = new FormView();
+
             $("#feedback-dialog").dialog({
                 title: "Feedback",
                 draggable: false
             });
+        }
+    });
+
+    var FormView = Backbone.View.extend({
+        el : '#feedback-form',
+
+        events: {
+            "submit": "submit",
+        },
+
+        initialize: function() {
+            console.log("initialize");
+        },
+
+        submit: function(e) {
+            e.preventDefault();
+            console.log("submit");
         }
     });
 

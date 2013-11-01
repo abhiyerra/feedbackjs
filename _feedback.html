@@ -15,7 +15,7 @@
     </div>
 
     <script id="feedback-template" type="text/x-handlebars-template">
-      <form action="/feedback" method="post">
+      <form method="post" id="feedback-form">
         <input type="hidden" name="window_location_href" value="{{window_location_href}}">
         <input type="hidden" name="document_location" value="{{document_location}}"/>
         <textarea name="comment"></textarea>
