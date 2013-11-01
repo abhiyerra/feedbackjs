@@ -6,9 +6,9 @@
 
 ## Required Files
 
-   | jQuery      | http://code.jquery.com/jquery-1.8.2.min.js |
-   | jQuery UI   | http://code.jquery.com/jquery-1.8.2.js     |
-   | Backbone.js | http://backbonejs.org/backbone-min.js      |
+| jQuery      | http://code.jquery.com/jquery-1.8.2.min.js |
+| jQuery UI   | http://code.jquery.com/jquery-1.8.2.js     |
+| Backbone.js | http://backbonejs.org/backbone-min.js      |
 
 ## License
 
