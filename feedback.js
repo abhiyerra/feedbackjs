@@ -7,7 +7,7 @@ $(function() {
         },
 
         openFeedbackDialog: function() {
-            var source   = $("#entry-template").html();
+            var source   = $("#feedback-template").html();
             var template = Handlebars.compile(source);
 
             $("#feedback-dialog").html(template({

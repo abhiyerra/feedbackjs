@@ -4,11 +4,12 @@
   the JavaScript library is included. This feedback is appended to a
   file called feedback.org in the root directory.
 
-## Required Files
+## Required Libraries
 
-| jQuery      | http://code.jquery.com/jquery-1.8.2.min.js |
-| jQuery UI   | http://code.jquery.com/jquery-1.8.2.js     |
-| Backbone.js | http://backbonejs.org/backbone-min.js      |
+ - jQuery
+ - Underscore
+ - Backbone.js
+ - Handlebars
 
 ## License
 

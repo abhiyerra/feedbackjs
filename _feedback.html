@@ -14,12 +14,11 @@
       <h2>Hello World</h2>
     </div>
 
-    <script id="entry-template" type="text/x-handlebars-template">
+    <script id="feedback-template" type="text/x-handlebars-template">
       <form action="/feedback" method="post">
         <input type="hidden" name="window_location_href" value="{{window_location_href}}">
         <input type="hidden" name="document_location" value="{{document_location}}"/>
-        <textarea name="comment">
-        </textarea>
+        <textarea name="comment"></textarea>
         <input type="submit" value="Send Feedback" />
       </form>
     </script>
