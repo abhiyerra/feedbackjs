@@ -1,8 +1,8 @@
 # feedback.js
 
-  The feedback component allows anyone to comment on any file where
-  the JavaScript library is included. This feedback is appended to a
-  file called feedback.org in the root directory.
+  Allow commenting on a webpage sections instead of having an
+  overarching comment section. People can then comment on that
+  section.
 
 ## Required Libraries
 
