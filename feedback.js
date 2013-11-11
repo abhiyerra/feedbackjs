@@ -1,4 +1,6 @@
 $(function() {
+    var Comment = Parse.Object.extend("Comment");
+
     var FeedbackApp = Backbone.View.extend({
         el: $("h2"),
 
@@ -16,11 +18,6 @@ $(function() {
             }));
 
             var formView = new FormView();
-
-            $("#feedback-dialog").dialog({
-                title: "Feedback",
-                draggable: false
-            });
         }
     });
 
@@ -37,7 +34,18 @@ $(function() {
 
         submit: function(e) {
             e.preventDefault();
-            console.log("submit");
+
+            var comment = new Comment();
+            comment.save({
+                // TODO: This should only check the e.target not the whole DOM.
+                location_href: $("#feedback-form-location-href").val(),
+                document_location: $("#feedback-form-document-location").val(),
+                body: $("#feedback-form-comment").val()
+            }, {
+                success: function(object) {
+                    console.log("submitted.");
+                }
+            });
         }
     });
 

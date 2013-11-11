@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
   <head>
+    <script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
@@ -16,9 +18,9 @@
 
     <script id="feedback-template" type="text/x-handlebars-template">
       <form method="post" id="feedback-form">
-        <input type="hidden" name="window_location_href" value="{{window_location_href}}">
-        <input type="hidden" name="document_location" value="{{document_location}}"/>
-        <textarea name="comment"></textarea>
+        <input type="hidden" id="feedback-form-location-href" value="{{window_location_href}}">
+        <input type="hidden" id="feedback-form-document-location" value="{{document_location}}"/>
+        <textarea id="feedback-form-comment"></textarea>
         <input type="submit" value="Send Feedback" />
       </form>
     </script>
